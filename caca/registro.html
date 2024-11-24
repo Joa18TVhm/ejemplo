@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form id="loginForm">
+        <label>
+            Correo:
+            <input type="email" id="correo" required>
+        </label>
+        <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+    </form>
+    <h2>¿No tienes una cuenta? Regístrate:</h2>
+    <form id="registroForm">
+        <label>
+            Nombre:
+            <input type="text" id="nombre" required>
+        </label>
+        <label>
+            Correo:
+            <input type="email" id="correoRegistro" required>
+        </label>
+        <label>
+            DNI:
+            <input type="text" id="dni" required>
+        </label>
+        <label>
+            Dirección:
+            <input type="text" id="direccion" required>
+        </label>
+        <button type="button" onclick="registrarCliente()">Registrar</button>
+    </form>
+    <script src="scripts/cliente.js"></script>
+</body>
+</html>
